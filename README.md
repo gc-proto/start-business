@@ -1,1 +1,1 @@
-http://neoinsight.github.io/start-business/mvp/home-en.html
+http://tbs-optimize.github.io/start-business/mvp/home-en.html
