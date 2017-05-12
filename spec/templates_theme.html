@@ -106,7 +106,8 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
 <div class="container">
 <div class="row">
 <ol class="breadcrumb">
-<li><a href="https://www.canada.ca/en.html">Home</a></li><li><a href="#">Treasury Board Secretariat</a></li>
+<li><a href="https://www.canada.ca/en.html">Home</a></li><li><a href="#">Treasury Board Secretariat</a></li><li><a href="spec_toc.html">Canada.ca Content and Information Architecture Specification</a></li>
+
 </ol>
 </div>
 </div>
@@ -140,6 +141,7 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
 		margin-bottom: 0em;
 	}
 	
+	/*
 	ul li {
 		margin-bottom: 0.5em;
 	}
@@ -151,18 +153,24 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
 			ul li ul li {
 				margin-bottom: 0.0em;
 			}
+	*/
+			
+	img {
+		border: 1px solid #ccc;
+		margin-top: 1em;
+		margin-bottom: 1em;
+	}
+			
+	details:first-child {
+		margin-top: 1em;
+	}
 
 </style>
 		
-<h1 property="name" id="wb-cont">Canada.ca Content and Information Architecture Specification</h1>
+<h1 property="name" id="wb-cont">Theme page template</h1>
 
 <p class="gc-byline"><strong>From <a href="#">Treasury Board Secretariat</a></strong></p>
 
-<h2>Purpose of this document</h2>
-
-<p>The Canada.ca Content and Information Architecture Specification outlines the content and information architecture (IA) approach for Canada.ca through user-centric templates and approaches designed to help users successfully complete tasks.</p>
-
-<p>The Content and IA Specification has been iteratively refined on a regular basis since January 2014, and will continue to be refined based upon feedback and user testing. </p>
 
 
 
@@ -170,75 +178,432 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
 
 
 
-<h2>Table of contents</h2> 
+<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. </p> 
+
+
+
+
+
+
+
+
+<h2>On this page</h2> 
+
+<ul> 
+<li><a href="#template">Theme page template layout and detailed specifications</a></li> 
+<li><a href="#samples">Sample HTML templates</a></li> 
+<li><a href="#purpose">Purpose of theme pages</a></li> 
+<li><a href="#usage">Proper use of theme pages</a></li> 
+<li><a href="#ia">Information architecture</a></li> 
+</ul>
+
+
+
+
+ 
+
+
+
+
+
+
+
+<h2 id="template">Theme page template layout and detailed specifications</h2>
+
+<!--
+<p>
+<img src="7_6_template.jpg" width="1100" height="2082" alt="Screenshot of theme page layout" />
+</p>
+-->
+
+<div class="row">
+
+	<div class="col-md-6">
+
+		<p>
+		<img src="7_6_template.jpg" width="550" height="1041" alt="Screenshot of theme page layout" />
+		</p>
+
+	</div>
+
+	<div class="col-md-6">
+
+		
+		<details class="brdr-tp brdr-rght brdr-bttm brdr-lft"> 
+		<summary class="wb-toggle" data-toggle="’{&quot;print&quot;:&quot;on&quot;}’"> #1:  Theme title </summary> 
+		<p><span class="label label-danger">Mandatory</span></p>
+
+		<p>Describes the theme and page content</p>
+
+		<h4>Presentation</h4>
+
+		<ul>
+		<li>The theme title must be a unique H1</li>
+		<li>It must be the first component on the page</li>
+		</ul>
+		</details> 
+
+
+
+
+
+		<details class="brdr-tp brdr-rght brdr-bttm brdr-lft"> 
+		<summary class="wb-toggle" data-toggle="’{&quot;print&quot;:&quot;on&quot;}’"> #2:  Theme introductory paragraph </summary> 
+
+		<p><span class="label label-danger">Mandatory</span></p>
+
+		<p>Describes the top tasks (i.e. services and information) and topics that can be accessed on this page</p>
+
+		<h4>Content</h4>
+
+		<ul>
+		<li>This component is mandatory</li>
+		<li>It provides an overview of all top tasks that can be accomplished on the given theme</li>
+		<li>Keep the text short and concise</li>
+		<li>Content is written for a grade 6-8 reading level</li>
+		<li>Refer to the top tasks within that topic, subtopic or task using keywords or keyword phrases separated by commas</li>
+		<li>Don’t include links</li>
+		<li>Don’t include promotional messaging</li>
+		<li>Avoid using introductory phrases such as:
+			<ul>
+			<li>"Includes…"</li>
+			<li>"Find information on…" or "Information on…"</li>
+			<li>"Learn more about…"</li>
+			</ul>
+		</li>
+		</ul>
+
+		<h4>Presentation</h4>
+
+		<ul>
+		<li>It appears below the theme title</li>
+		<li>It also appears to the left of the theme carousel</li>
+		</ul>
+
+		</details> 
+
+
+
+
+
+
+
+
+
+		<details class="brdr-tp brdr-rght brdr-bttm brdr-lft"> 
+		<summary class="wb-toggle" data-toggle="’{&quot;print&quot;:&quot;on&quot;}’"> #3:  Theme carousel </summary> 
+
+		<p><span class="label label-danger">Mandatory</span></p>
+
+		<p>Features theme-specific top tasks and topic information that is timely and relevant</p>
+
+		<h4>Content</h4>
+
+		<ul>
+		<li>Refer to <a href="#">Carousels</a> in Common design patterns</li>
+		</ul>
+
+		<h4>Presentation</h4>
+
+		<ul>
+		<li>The theme carousel appears at the top of the page</li>
+		<li>It also appears to the right of the theme introductory paragraph</li>
+		</ul>
+
+		</details> 
+
+
+
+
+
+		<details class="brdr-tp brdr-rght brdr-bttm brdr-lft"> 
+		<summary class="wb-toggle" data-toggle="’{&quot;print&quot;:&quot;on&quot;}’"> #4:  Theme social media channels </summary> 
+
+		<p><span class="label label-warning">Conditional</span></p>
+
+		<p>Features theme-specific social media channels</p>
+
+		<h4>Content</h4>
+
+		<ul>
+		<li>This component is mandatory when there is one or more theme related social media channels that exist.</li>
+		<li>Refer to <a href="#">Social media channels block (follow block)</a> in Common design patterns</li>
+		</ul>
+
+		<h4>Presentation</h4>
+
+		<ul>
+		<li>This component appears below the theme introductory paragraph</li>
+		</ul>
+
+		</details> 
+
+
+
+
+
+
+
+		<details class="brdr-tp brdr-rght brdr-bttm brdr-lft"> 
+		<summary class="wb-toggle" data-toggle="’{&quot;print&quot;:&quot;on&quot;}’"> #5:  Services and information </summary> 
+
+		<p><span class="label label-danger">Mandatory</span></p>
+
+		<p>Features theme-specific topics</p>
+
+		<h4>Content</h4>
+
+		<ul>
+		<li>Refer to <a href="#">Services and information</a> in Common design patterns</li>
+		</ul>
+
+		<h4>Presentation</h4>
+
+		<ul>
+		<li>This component appears below the theme social media channels and to the left of “Most requested” </li>
+		<li>The heading is labelled “Services and information”</li>
+		</ul>
+
+		</details> 
+
+
+
+
+
+
+
+		<details class="brdr-tp brdr-rght brdr-bttm brdr-lft"> 
+		<summary class="wb-toggle" data-toggle="’{&quot;print&quot;:&quot;on&quot;}’"> #6:  Most requested </summary> 
+
+		<p><span class="label label-danger">Mandatory</span></p>
+
+		<p>Features theme-specific top tasks</p>
+
+		<h4>Content</h4>
+
+		<ul>
+		<li>Refer to <a href="#">Most requested</a> in Common design patterns</li>
+		</ul>
+
+		<h4>Presentation</h4>
+
+		<ul>
+		<li>This component appears to the right of “Services and information”</li>
+		<li>The heading is labelled “Most requested”</li>
+		</ul>
+
+		</details> 
+
+
+
+
+
+
+
+		<details class="brdr-tp brdr-rght brdr-bttm brdr-lft"> 
+		<summary class="wb-toggle" data-toggle="’{&quot;print&quot;:&quot;on&quot;}’"> #7:  More information for </summary> 
+
+		<p><span class="label label-warning">Conditional</span></p>
+
+		<p>Links to information related to audience</p>
+
+		<h4>Content</h4>
+
+		<ul>
+		<li>This component is mandatory when there is one or more theme-related government-wide audience page or audience topic page that exist</li>
+		<li>Refer to <a href="#">More information for</a> in Common design patterns</li>
+		</ul>
+
+		<h4>Presentation</h4>
+
+		<ul>
+		<li>This component appears below “Most requested”</li>
+		<li>The heading is labelled “More information for” </li>
+		</ul>
+
+		</details> 
+
+
+
+
+
+
+
+
+
+		<details class="brdr-tp brdr-rght brdr-bttm brdr-lft"> 
+		<summary class="wb-toggle" data-toggle="’{&quot;print&quot;:&quot;on&quot;}’"> #8:  Theme features </summary> 
+
+		<p><span class="label label-danger">Mandatory</span></p>
+
+		<p>Promotes theme-specific current activities being led by departments and agencies across the GC</p>
+
+		<h4>Content</h4>
+
+		<ul>
+		<li>Refer to <a href="#">Promotional feature tiles</a> in Common design patterns</li>
+		</ul>
+
+		<h4>Presentation</h4>
+
+		<ul>
+		<li>This component appears below “Services and information”</li>
+		</ul>
+
+		</details> 
+	
+	</div>
+
+</div>
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+<h2 id="samples">Sample HTML templates</h2>
 
 <ul>
-<li><a href="">Usage of the global Canada.ca design</a></li> 
-<li><a href="">Information architecture, templates and detailed specifications</a>
-	<ul> 
-	<li><a href="">Page types and templates: Themes</a></li> 
-	<li><a href="">Page types and templates: Institutional</a></li> 
-	<li><a href="">Page types and templates: Canada.ca collections</a></li> 
-	<li><a href="">Page types and templates: Site-wide (global) constructs</a></li> 
-	<li><a href="">Home page</a></li> 
-	<li><a href="templates_theme.html">Theme pages</a></li> 
-	<li><a href="">Topic pages</a></li> 
-	<li><a href="">Departments and agencies page</a></li> 
-	<li><a href="">Institutional profile pages</a></li> 
-	<li><a href="">Organizational profile pages</a></li> 
-	<li><a href="">Partnering/Collaborative Arrangement Profile</a></li> 
-	<li><a href="">Service and program pages</a></li> 
-	<li><a href="">Service initiation pages</a></li> 
-	<li><a href="">Institutional service standards page</a></li> 
-	<li><a href="">Program description pages</a></li> 
-	<li><a href="">Ministerial profile pages</a></li> 
-	<li><a href="">Canada.ca collections</a></li> 
-	<li><a href="">Consultations collection</a></li> 
-	<li><a href="">Laws and regulations collection</a></li> 
-	<li><a href="">Guidance on legislation</a></li> 
-	<li><a href="">Audience pages</a></li> 
-	<li><a href="">News</a></li> 
-	<li><a href="">Promotional content</a></li> 
-	<li><a href="">Campaigns</a></li> 
-	<li><a href="">Promotional Events</a></li> 
-	<li><a href="">Contact us</a></li> 
-	<li><a href="">Search</a></li> 
-	<li><a href="">Index pages</a></li> 
-	<li><a href="">Generic destination pages</a></li> 
-	</ul> 
-</li>
-<li><a href="">Common design patterns</a></li> 
-<li><a href="">Global site header and footer</a>
-	<ul> 
-	<li><a href="">Global header navigation</a></li> 
-	<li><a href="">Other header elements</a></li> 
-	<li><a href="">Main content footer</a></li> 
-	<li><a href="">Global footer navigation</a></li> 
-	<li><a href="">Transactional scenarios</a></li> 
-	</ul> 
-</li> 
-<li><a href="">Conceptual overview of information architecture</a>
-	<ul> 
-	<li><a href="">Information architecture models on Canada.ca</a></li> 
-	<li><a href="">Canada.ca URL Model</a></li> 
-	<li><a href="">Content reuse</a></li> 
-	<li><a href="">Resource discovery model</a></li> 
-	<li><a href="">User-needs categories and content types</a></li> 
-	</ul> 
-</li> 
-<li><a href="">Canada.ca Topic Tree</a></li> 
-<li><a href="">Canada.ca Content Types</a></li>
-<li><a href="">Core principles</a>
-	<ul> 
-	<li><a href="">User-centered design principles</a></li> 
-	<li><a href="">Content design principles</a></li> 
-	<li><a href="">Information architecture principles</a></li> 
-	<li><a href="">The task-centred approach</a></li>
-	</ul> 
-</li>
-<li><a href="">Canada.ca institutions List</a></li>
-<li><a href="">Glossary</a></li>
+<li><a href="#">First example of a theme page</a></li>
+<li><a href="#">Second example of a theme page</a></li>
+<li><a href="#">Third example of a theme page</a></li>
+<li><a href="#">Fourth example of a theme page</a></li>
 </ul>
+
+
+
+
+
+
+
+
+
+
+<h2 id="purpose">Purpose of theme pages</h2>
+
+<ul>
+<li>Theme page types and templates are user-tested pages which provide access to topics, sub-topics and destination pages that support task completion.</li>
+<li>They provide support theme navigation rather than an institutional navigation of government-wide content (see <a href="#">User IA model</a>).</li>
+<li>They prioritize content and navigation by presenting the most visited information and services first.</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 id="usage">Proper use of theme pages</h2>
+
+<ul>
+<li>The Theme Page Template must be implemented only once for each Canada.ca theme as well as for the "How government works" and "Public service and military" sections of the site.</li>
+<li>Only Theme Lead institutions can use this template.</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 id="ia">Information architecture</h2>
+
+<p>
+Canada.ca is organized around 15 themes, based on an analysis of top tasks (most requested information and services) across the Government of Canada. 
+</p>
+
+<p>
+While the themes emphasize top tasks related to information and service delivery, they also provide a window into GC activities that are undertaken to support programs and services (e.g. research, consultation, policy development). 
+</p>
+
+
+<div class="row">
+
+	<div class="col-md-6">
+
+		<p>
+		<img src="7_6_ia.jpg" width="499" height="588" alt="Flowchart diagram illustrating how theme pages fit into the Canada.ca information architecture" />
+		</p>
+
+		<details class="brdr-tp brdr-rght brdr-bttm brdr-lft" style="width:499px;"> 
+		<summary class="wb-toggle" data-toggle="’{&quot;print&quot;:&quot;on&quot;}’"> Text description of IA diagram </summary> 
+		<p>Text equivalent of the IA diagram appears here</p> 
+		</details> 
+	
+	</div>
+
+	<div class="col-md-6">
+
+		<p>
+		<img src="7_6_ia_storage.jpg" width="499" height="650" alt="Flowchart diagram illustrating how theme pages fit into the Canada.ca information architecture" />
+		</p>
+
+		<details class="brdr-tp brdr-rght brdr-bttm brdr-lft" style="width:499px;"> 
+		<summary class="wb-toggle" data-toggle="’{&quot;print&quot;:&quot;on&quot;}’"> Text description of storage IA diagram </summary> 
+		<p>Text equivalent of the storage IA diagram appears here</p> 
+		</details>
+	
+	</div>
+	
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
