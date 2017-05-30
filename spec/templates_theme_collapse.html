@@ -122,14 +122,28 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
 		
 <!--
 <details class="brdr-tp brdr-rght brdr-bttm brdr-lft"> 
-<summary class="wb-toggle" data-toggle="’{&quot;print&quot;:&quot;on&quot;}’"> Summary </summary> 
+<summary class="wb-toggle" data-toggle="{'print':'on'}"> Summary </summary> 
 <p>Details</p> 
 </details> 
 -->	
 
 <style>
-	p, li {
-		max-width: 60em;
+			
+	.layout {
+		padding-top: 1em;
+	}
+			
+		.layout img {
+			border: 1px solid #ccc;
+		}
+			
+	.specifications {
+		padding-top: 1em;
+	}
+			
+	.ia img {
+		border: 1px solid #ccc;
+		margin-top: 1em;
 	}
 	
 	details p {
@@ -137,32 +151,6 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
 		margin-bottom: 0em;
 	}
 	
-	/*
-	ul li {
-		margin-bottom: 0.5em;
-	}
-	
-		ul li ul {
-			margin-top: 0.5em;
-		}
-	
-			ul li ul li {
-				margin-bottom: 0.0em;
-			}
-	*/
-			
-	img {
-		border: 1px solid #ccc;
-		margin-top: 1em;
-		margin-bottom: 1em;
-	}
-			
-	details:first-child {
-		margin-top: 1em;
-	}
-	
-	nav ul.pager li.toc {
-	}
 </style>
 		
 <h1 property="name" id="wb-cont">Theme page template</h1>
@@ -218,7 +206,7 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
 
 <div class="row">
 
-	<div class="col-lg-6">
+	<div class="col-lg-6 layout">
 
 		<p>
 		<img src="7_6_template.jpg" width="550" height="1041" alt="Screenshot of theme page layout" />
@@ -226,16 +214,23 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
 
 	</div>
 
-	<div class="col-lg-6">
+	<div class="col-lg-6 specifications">
 
+		<p>
+		<button type="button" class="btn btn-default wb-toggle" data-toggle='{"type": "on", "selector": "details", "parent": ".specifications", "print": "on"}'>Expand all</button>
+		<button type="button" class="btn btn-default wb-toggle" data-toggle='{"type": "off", "selector": "details", "parent": ".specifications", "print": "on"}'>Collapse all</button>
+		</p>
 		
 		<details class="brdr-tp brdr-rght brdr-bttm brdr-lft"> 
-		<summary class="wb-toggle" data-toggle="’{&quot;print&quot;:&quot;on&quot;}’"> 1:  Theme title </summary> 
+		<summary class="wb-toggle" data-toggle="{'print':'on'}"> 1:  Theme title </summary> 
+		
+		<h4>Theme title</h4>
+		
 		<p><span class="label label-danger">Mandatory</span></p>
 
 		<p>Describes the theme and page content</p>
 
-		<h4>Presentation</h4>
+		<h5>Presentation</h5>
 
 		<ul>
 		<li>The theme title must be a unique H1</li>
@@ -248,13 +243,15 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
 
 
 		<details class="brdr-tp brdr-rght brdr-bttm brdr-lft"> 
-		<summary class="wb-toggle" data-toggle="’{&quot;print&quot;:&quot;on&quot;}’"> 2:  Theme introductory paragraph </summary> 
+		<summary class="wb-toggle" data-toggle="{'print':'on'}"> 2:  Theme introductory paragraph </summary> 
+		
+		<h4>Theme introductory paragraph</h4>
 
 		<p><span class="label label-danger">Mandatory</span></p>
 
 		<p>Describes the top tasks (i.e. services and information) and topics that can be accessed on this page</p>
 
-		<h4>Content</h4>
+		<h5>Content</h5>
 
 		<ul>
 		<li>This component is mandatory</li>
@@ -273,7 +270,7 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
 		</li>
 		</ul>
 
-		<h4>Presentation</h4>
+		<h5>Presentation</h5>
 
 		<ul>
 		<li>It appears below the theme title</li>
@@ -291,19 +288,21 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
 
 
 		<details class="brdr-tp brdr-rght brdr-bttm brdr-lft"> 
-		<summary class="wb-toggle" data-toggle="’{&quot;print&quot;:&quot;on&quot;}’"> 3:  Theme carousel </summary> 
+		<summary class="wb-toggle" data-toggle="{'print':'on'}"> 3:  Theme carousel </summary> 
+		
+		<h4>Theme carousel</h4>
 
 		<p><span class="label label-danger">Mandatory</span></p>
 
 		<p>Features theme-specific top tasks and topic information that is timely and relevant</p>
 
-		<h4>Content</h4>
+		<h5>Content</h5>
 
 		<ul>
 		<li>Refer to <a href="#">Carousels</a> in Common design patterns</li>
 		</ul>
 
-		<h4>Presentation</h4>
+		<h5>Presentation</h5>
 
 		<ul>
 		<li>The theme carousel appears at the top of the page</li>
@@ -317,20 +316,22 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
 
 
 		<details class="brdr-tp brdr-rght brdr-bttm brdr-lft"> 
-		<summary class="wb-toggle" data-toggle="’{&quot;print&quot;:&quot;on&quot;}’"> 4:  Theme social media channels </summary> 
+		<summary class="wb-toggle" data-toggle="{'print':'on'}"> 4:  Theme social media channels </summary> 
+		
+		<h4>Theme social media channels</h4>
 
 		<p><span class="label label-warning">Conditional</span></p>
 
 		<p>Features theme-specific social media channels</p>
 
-		<h4>Content</h4>
+		<h5>Content</h5>
 
 		<ul>
 		<li>This component is mandatory when there is one or more theme related social media channels that exist.</li>
 		<li>Refer to <a href="#">Social media channels block (follow block)</a> in Common design patterns</li>
 		</ul>
 
-		<h4>Presentation</h4>
+		<h5>Presentation</h5>
 
 		<ul>
 		<li>This component appears below the theme introductory paragraph</li>
@@ -345,19 +346,21 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
 
 
 		<details class="brdr-tp brdr-rght brdr-bttm brdr-lft"> 
-		<summary class="wb-toggle" data-toggle="’{&quot;print&quot;:&quot;on&quot;}’"> 5:  Services and information </summary> 
+		<summary class="wb-toggle" data-toggle="{'print':'on'}"> 5:  Services and information </summary> 
+		
+		<h4>Services and information</h4>
 
 		<p><span class="label label-danger">Mandatory</span></p>
 
 		<p>Features theme-specific topics</p>
 
-		<h4>Content</h4>
+		<h5>Content</h5>
 
 		<ul>
 		<li>Refer to <a href="#">Services and information</a> in Common design patterns</li>
 		</ul>
 
-		<h4>Presentation</h4>
+		<h5>Presentation</h5>
 
 		<ul>
 		<li>This component appears below the theme social media channels and to the left of “Most requested” </li>
@@ -373,19 +376,21 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
 
 
 		<details class="brdr-tp brdr-rght brdr-bttm brdr-lft"> 
-		<summary class="wb-toggle" data-toggle="’{&quot;print&quot;:&quot;on&quot;}’"> 6:  Most requested </summary> 
+		<summary class="wb-toggle" data-toggle="{'print':'on'}"> 6:  Most requested </summary> 
+		
+		<h4>Most requested</h4>
 
 		<p><span class="label label-danger">Mandatory</span></p>
 
 		<p>Features theme-specific top tasks</p>
 
-		<h4>Content</h4>
+		<h5>Content</h5>
 
 		<ul>
 		<li>Refer to <a href="#">Most requested</a> in Common design patterns</li>
 		</ul>
 
-		<h4>Presentation</h4>
+		<h5>Presentation</h5>
 
 		<ul>
 		<li>This component appears to the right of “Services and information”</li>
@@ -401,20 +406,22 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
 
 
 		<details class="brdr-tp brdr-rght brdr-bttm brdr-lft"> 
-		<summary class="wb-toggle" data-toggle="’{&quot;print&quot;:&quot;on&quot;}’"> 7:  More information for </summary> 
+		<summary class="wb-toggle" data-toggle="{'print':'on'}"> 7:  More information for </summary> 
+		
+		<h4>More information for</h4>
 
 		<p><span class="label label-warning">Conditional</span></p>
 
 		<p>Links to information related to audience</p>
 
-		<h4>Content</h4>
+		<h5>Content</h5>
 
 		<ul>
 		<li>This component is mandatory when there is one or more theme-related government-wide audience page or audience topic page that exist</li>
 		<li>Refer to <a href="#">More information for</a> in Common design patterns</li>
 		</ul>
 
-		<h4>Presentation</h4>
+		<h5>Presentation</h5>
 
 		<ul>
 		<li>This component appears below “Most requested”</li>
@@ -432,19 +439,21 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
 
 
 		<details class="brdr-tp brdr-rght brdr-bttm brdr-lft"> 
-		<summary class="wb-toggle" data-toggle="’{&quot;print&quot;:&quot;on&quot;}’"> 8:  Theme features </summary> 
+		<summary class="wb-toggle" data-toggle="{'print':'on'}"> 8:  Theme features </summary>
+		
+		<h4>Theme features</h4> 
 
 		<p><span class="label label-danger">Mandatory</span></p>
 
 		<p>Promotes theme-specific current activities being led by departments and agencies across the GC</p>
 
-		<h4>Content</h4>
+		<h5>Content</h5>
 
 		<ul>
 		<li>Refer to <a href="#">Promotional feature tiles</a> in Common design patterns</li>
 		</ul>
 
-		<h4>Presentation</h4>
+		<h5>Presentation</h5>
 
 		<ul>
 		<li>This component appears below “Services and information”</li>
@@ -540,27 +549,27 @@ While the themes emphasize top tasks related to information and service delivery
 
 <div class="row">
 
-	<div class="col-lg-6">
+	<div class="col-lg-6 ia">
 
 		<p>
 		<img src="7_6_ia.jpg" width="499" height="588" alt="Flowchart diagram illustrating how theme pages fit into the Canada.ca information architecture" />
 		</p>
 
 		<details class="brdr-tp brdr-rght brdr-bttm brdr-lft" style="width:499px;"> 
-		<summary class="wb-toggle" data-toggle="’{&quot;print&quot;:&quot;on&quot;}’"> Text description of navigation diagram </summary> 
+		<summary class="wb-toggle" data-toggle="{'print':'on'}"> Text description of navigation diagram </summary> 
 		<p>Text equivalent of the navigation diagram appears here</p> 
 		</details> 
 	
 	</div>
 
-	<div class="col-lg-6">
+	<div class="col-lg-6 ia">
 
 		<p>
 		<img src="7_6_ia_storage.jpg" width="499" height="650" alt="Flowchart diagram illustrating how theme pages fit into the Canada.ca information architecture" />
 		</p>
 
 		<details class="brdr-tp brdr-rght brdr-bttm brdr-lft" style="width:499px;"> 
-		<summary class="wb-toggle" data-toggle="’{&quot;print&quot;:&quot;on&quot;}’"> Text description of storage IA diagram </summary> 
+		<summary class="wb-toggle" data-toggle="{'print':'on'}"> Text description of storage IA diagram </summary> 
 		<p>Text equivalent of the storage IA diagram appears here</p> 
 		</details>
 	
